@@ -19,21 +19,29 @@ public class ChatBotService {
 
     private List<Message> history = new ArrayList<>();
 
+    private final String System_Prompt = """
+            You are a customer support executive for our 
+            food delivery app named tomato
+            
+            Your job is to identify the customer's main
+            problem and urgency. Answer then related to their query in 2 line
+            
+            Use professional language. if user has an issue
+            use word like I understand your frustration,
+            I am very sorry for your trouble etc
+            
+            Do not NSWER ANY OTHER QUESTION WHICH IS NOT 
+            RELATED TO ORDERING FOOD QUERY, REFUND QUERY,
+            ORDER TRACKING STATUS QUERY OR COMPANY POLICY QUERY""";
+
 
 
     public String chat(String message) {
 
-        String prompt = """
-                You are a customer support executive of
-                our food delivery application called Tomato.
-                Response to customer query professionally.
-                Always respond in 2 line.
-                
-                if user is furious, or angry or have any issue talk to him quitly and pleasently so on
-                Do not answer to any other query other then food delivery""" + message;
 
-        history.add(new UserMessage(prompt));
+        history.add(new UserMessage(message));
         String output = chatClient.prompt()
+                .system(System_Prompt)
                 .messages(history)
                 .call()
                 .content();
