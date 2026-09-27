@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/ChatBot/pom.xml" />
         <option value="$PROJECT_DIR$/QuerySummarizer/pom.xml" />
+        <option value="$PROJECT_DIR$/ChatBot/backend/pom.xml" />
       </list>
     </option>
   </component>
