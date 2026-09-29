@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ChatBot" />
         <module name="QuerySummarizer" />
+        <module name="AiAgent" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AiAgent" options="-parameters" />
       <module name="ChatBot" options="-parameters" />
       <module name="QuerySummarizer" options="-parameters" />
     </option>
