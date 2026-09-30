@@ -1,8 +1,26 @@
 package in.SpringBoot.aiTools;
 
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.ai.tool.annotation.ToolParam;
+import org.springframework.stereotype.Component;
+
+@Component
 public class CalculatorTool {
 
-    public double calculate(double a, double b, String operation) {
+
+    @Tool(description = """
+            Performs Arithmetic operations , calculations,
+            Supported operations: add, subtract, multiply, divide, mod, power
+            """)
+    public double calculate(
+            @ToolParam(description = "First number")
+            double a,
+            @ToolParam(description = "Second number")
+            double b,
+            @ToolParam(description = "Operation: add, subtract, multiply, divide, mod, power")
+            String operation) {
+
+        System.out.println("Calculator Too called");
         if (operation.equals("add")) {
             return a + b;
         }
@@ -29,6 +47,7 @@ public class CalculatorTool {
         else {
             throw new IllegalArgumentException("Unknown operation " + operation);
         }
+
     }
 
 }
