@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy Clone</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">🍔 Swiggy</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurants or dishes" />
+        </div>
+        <div class="location">
+            <span class="icon">📍</span>
+            <select>
+                <option>Current Location</option>
+                <option>New Delhi</option>
+                <option>Mumbai</option>
+                <option>Bangalore</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Categories -->
+        <section class="categories">
+            <h2>Popular Cuisines</h2>
+            <div class="category-list">
+                <button>Pizza</button>
+                <button>Burgers</button>
+                <button>Sushi</button>
+                <button>Indian</button>
+                <button>Chinese</button>
+                <button>Desserts</button>
+            </div>
+        </section>
+
+        <!-- Restaurant List -->
+        <section class="restaurant-list">
+            <h2>Restaurants Near You</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?pizza" alt="Restaurant" />
+                    <div class="card-body">
+                        <h3>Pizza Palace</h3>
+                        <p class="cuisine">Italian • Pizza</p>
+                        <p class="rating">⭐ 4.5 (1.2k)</p>
+                        <p class="info">30‑45 min • $12 min order</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?burger" alt="Restaurant" />
+                    <div class="card-body">
+                        <h3>Burger Hub</h3>
+                        <p class="cuisine">Fast Food • Burgers</p>
+                        <p class="rating">⭐ 4.2 (900)</p>
+                        <p class="info">20‑35 min • $10 min order</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://source.unsplash.com/featured/?sushi" alt="Restaurant" />
+                    <div class="card-body">
+                        <h3>Sushi World</h3>
+                        <p class="cuisine">Japanese • Sushi</p>
+                        <p class="rating">⭐ 4.8 (2.1k)</p>
+                        <p class="info">40‑55 min • $15 min order</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

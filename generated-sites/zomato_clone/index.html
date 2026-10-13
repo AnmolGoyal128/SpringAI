@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Zomato</div>
+        <div class="location">
+            <span class="icon">📍</span>
+            Sonipat, Haryana <span class="arrow">▼</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for restaurant, cuisine or a dish" />
+            <span class="icon">🔍</span>
+        </div>
+        <div class="auth-buttons">
+            <button class="login">Log in</button>
+            <button class="signup">Sign up</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover the best food & drinks in your city</h1>
+            <p>Explore top restaurants, trending dishes and delicious meals near you.</p>
+            <div class="hero-search">
+                <div class="tabs">
+                    <button class="tab active" data-type="restaurants">Restaurants</button>
+                    <button class="tab" data-type="dishes">Dishes</button>
+                </div>
+                <input type="text" placeholder="Search for restaurant, cuisine or a dish" />
+                <span class="icon">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Explore food categories</h2>
+        <div class="category-list">
+            <!-- Category items -->
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?pizza" alt="Pizza" />
+                <span>Pizza</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?burger" alt="Burgers" />
+                <span>Burgers</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?biryani" alt="Biryani" />
+                <span>Biryani</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?north-indian-food" alt="North Indian" />
+                <span>North Indian</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?chinese-food" alt="Chinese" />
+                <span>Chinese</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?south-indian-food" alt="South Indian" />
+                <span>South Indian</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?dessert" alt="Desserts" />
+                <span>Desserts</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?rolls" alt="Rolls" />
+                <span>Rolls</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?momos" alt="Momos" />
+                <span>Momos</span>
+            </div>
+            <div class="category-item">
+                <img src="https://source.unsplash.com/80x80/?beverage" alt="Beverages" />
+                <span>Beverages</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Listings -->
+    <section class="restaurants">
+        <h2>Popular restaurants near you</h2>
+        <div class="restaurant-grid">
+            <!-- Card 1 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?pizza" alt="The Pizza Studio" />
+                <div class="card-body">
+                    <h3>The Pizza Studio</h3>
+                    <p class="cuisine">Pizza, Italian, Fast Food</p>
+                    <div class="details">
+                        <span class="rating">4.5 ★</span>
+                        <span class="time">25–30 min</span>
+                        <span class="price">₹400 for two</span>
+                    </div>
+                    <div class="offer">40% OFF</div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?burger" alt="Burger Junction" />
+                <div class="card-body">
+                    <h3>Burger Junction</h3>
+                    <p class="cuisine">Burgers, American, Fast Food</p>
+                    <div class="details">
+                        <span class="rating">4.2 ★</span>
+                        <span class="time">20–25 min</span>
+                        <span class="price">₹300 for two</span>
+                    </div>
+                    <div class="offer">30% OFF</div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?biryani" alt="Royal Biryani House" />
+                <div class="card-body">
+                    <h3>Royal Biryani House</h3>
+                    <p class="cuisine">Biryani, Mughlai, North Indian</p>
+                    <div class="details">
+                        <span class="rating">4.6 ★</span>
+                        <span class="time">30–35 min</span>
+                        <span class="price">₹500 for two</span>
+                    </div>
+                    <div class="offer">Free delivery</div>
+                </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?north-indian" alt="Spice Garden" />
+                <div class="card-body">
+                    <h3>Spice Garden</h3>
+                    <p class="cuisine">North Indian, Thalis, Chinese</p>
+                    <div class="details">
+                        <span class="rating">4.3 ★</span>
+                        <span class="time">25–35 min</span>
+                        <span class="price">₹450 for two</span>
+                    </div>
+                    <div class="offer">20% OFF</div>
+                </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?sushi" alt="Sushi World" />
+                <div class="card-body">
+                    <h3>Sushi World</h3>
+                    <p class="cuisine">Japanese, Sushi, Asian</p>
+                    <div class="details">
+                        <span class="rating">4.4 ★</span>
+                        <span class="time">30–40 min</span>
+                        <span class="price">₹600 for two</span>
+                    </div>
+                    <div class="offer">15% OFF</div>
+                </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?dessert" alt="Sweet Tooth" />
+                <div class="card-body">
+                    <h3>Sweet Tooth</h3>
+                    <p class="cuisine">Desserts, Ice Cream, Bakery</p>
+                    <div class="details">
+                        <span class="rating">4.5 ★</span>
+                        <span class="time">20–30 min</span>
+                        <span class="price">₹250 for two</span>
+                    </div>
+                    <div class="offer">Free delivery</div>
+                </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?south-indian" alt="Curry Leaf" />
+                <div class="card-body">
+                    <h3>Curry Leaf</h3>
+                    <p class="cuisine">South Indian, Dosa, Idli</p>
+                    <div class="details">
+                        <span class="rating">4.2 ★</span>
+                        <span class="time">25–35 min</span>
+                        <span class="price">₹350 for two</span>
+                    </div>
+                    <div class="offer">25% OFF</div>
+                </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="restaurant-card">
+                <img src="https://source.unsplash.com/300x200/?coffee" alt="Brew Lounge" />
+                <div class="card-body">
+                    <h3>Brew Lounge</h3>
+                    <p class="cuisine">Beverages, Coffee, Snacks</p>
+                    <div class="details">
+                        <span class="rating">4.3 ★</span>
+                        <span class="time">15–20 min</span>
+                        <span class="price">₹200 for two</span>
+                    </div>
+                    <div class="offer">10% OFF</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

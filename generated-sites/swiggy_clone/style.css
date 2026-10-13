@@ -1,0 +1,126 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1.5rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.search-bar input {
+    width: 250px;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.location {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.location select {
+    border: 1px solid #ddd;
+    padding: 0.4rem;
+    border-radius: 4px;
+    background: #fff;
+}
+/* Main */
+.main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+/* Categories */
+.categories h2 {
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+.category-list button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.category-list button:hover {
+    background: #ffcc00;
+    border-color: #ffcc00;
+}
+/* Restaurant cards */
+.restaurant-list h2 {
+    margin: 1.5rem 0 1rem;
+    font-size: 1.4rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card-body {
+    padding: 0.8rem 1rem;
+}
+.card-body h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+.card-body p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.2rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.6rem;
+    }
+    .search-bar input {
+        width: 100%;
+    }
+    .location {
+        justify-content: flex-end;
+    }
+}
